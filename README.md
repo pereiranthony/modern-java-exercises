@@ -1,2 +1,2 @@
-# java-moderno-exercicios
-Este repositório é para eu conseguir ver minha evolução e me ajudar a conseguir minha vaga como desenvolvedor backend júnior.
+# Modern Java Exercises
+I created this repository to help me to see my evolution and secure a Junior Software Engineer position at a top company.
