@@ -13,11 +13,11 @@ import java.util.function.Supplier;
 */
 
 public class Main {
-    static void main() {
-        Random random = new Random();
+    static void main(String[] args) {
 
         Supplier<String> emptyGen = () -> "empty";
-        Supplier<String> codeGen = () -> "TX-" + String.format("%04d", random.nextInt(10000));
+        Supplier<String> codeGen = () ->
+                "TX-" + String.format("%04d", new Random().nextInt(10000));
 
         for(String value : fill(5, emptyGen)) {
             System.out.printf("%s ", value);
