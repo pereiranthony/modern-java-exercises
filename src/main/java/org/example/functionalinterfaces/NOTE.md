@@ -57,7 +57,7 @@ For example: printing a formatted transaction.
 
 **What goes in, and what comes out?**
 Nothing goes in, and a value of any type comes out. 
-Its purpose is the result itself, not an action.
+The value is only created when someone calls `get()`.
 Method signature: `T get()`
 
 **How would I write this lambda as a normal method?**
@@ -72,6 +72,9 @@ In `Optional.orElseGet(() ->...)` and `orElseThrow(() -> new SomeException())`.
 For example: generating random transactions.
 
 **Why doesn't a Supplier take any parameters?**
-Because 
-
+A Supplier doesn't take parameters because 
+everything it needs is already available 
+inside the lambda, and the code that 
+calls `get()` has nothing to give it. 
+It only receives the value.
 
