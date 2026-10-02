@@ -1,6 +1,14 @@
 # Functional Interfaces
 
-**Why it works and helps us?**
+**Why are they useful?**
+Functional interfaces are useful to make the
+code much cleaner, and help us avoid creating
+many classes because we pass the behavior as a
+parameter, so one method can work with different
+rules. Lambda Expressions only work because 
+of them. They are also the foundation for 
+understanding Streams, Optional, and 
+Spring Security.
 
 ## Exercise 01 – Predicate
 
