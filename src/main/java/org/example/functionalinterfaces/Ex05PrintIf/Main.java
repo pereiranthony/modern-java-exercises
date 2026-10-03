@@ -2,6 +2,7 @@ package org.example.functionalinterfaces.Ex05PrintIf;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.function.Predicate;
 
 /*
@@ -19,7 +20,7 @@ public class Main {
 
         Predicate<String> isShort = t -> t.length() <= 5;
         Predicate<String> isLowerCase = t -> t.equals(t.toLowerCase());
-        Predicate<String> containsA = t -> t.contains("A") || t.contains("a");
+        Predicate<String> containsA = t -> t.toLowerCase().contains("a");
 
         printIf(list, isShort);
         printIf(list, isLowerCase);
